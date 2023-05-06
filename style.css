@@ -593,7 +593,7 @@ p.delivery {
 }
 .form__body p {
   font-size: 1.5rem;
-  margin: 1.5rem;
+  margin: 3rem 0 4rem;
   text-align: start;
 }
 .contact form {
@@ -626,14 +626,14 @@ p.delivery {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0.6rem;
   z-index: -1;
   transition: 0.5s;
 }
 .contact form .textarea-field textarea {
   resize: none;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .contact form .input-box .input-field input:focus ~ .focus,
 .contact form .textarea-field textarea:focus ~ .focus,
@@ -1091,7 +1091,6 @@ p.delivery {
     color: var(--second-text-color);
   }
   .form__body p {
-    margin: 3rem 0;
     color: var(--second-text-color);
   }
 }
