@@ -7,9 +7,9 @@ const swiper = new Swiper('.swiper', {
     // type: 'progressbar',
   },
 
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
 
   // Navigation arrows
   navigation: {
