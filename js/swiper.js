@@ -1,6 +1,15 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  // loop: true,
+  loop: false,
+
+  pagination: {
+    el: '.swiper-pagination',
+    // type: 'progressbar',
+  },
+
+  // autoplay: {
+  //   delay: 5000,
+  // },
 
   // Navigation arrows
   navigation: {
