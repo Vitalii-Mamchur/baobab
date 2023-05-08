@@ -213,7 +213,7 @@ span {
   align-items: center;
   justify-content: space-between; */
   padding: 3% 5%;
-  background: url('./img/main-bg.png') no-repeat;
+  background: url('./img/main-bg.webp') no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
   background-size: cover;
   background-position: center;
