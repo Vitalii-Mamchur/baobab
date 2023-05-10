@@ -8,11 +8,11 @@ const swiper = new Swiper('.swiper', {
   // },
 
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
   },
 
-  speed: 800,
+  speed: 1200,
 
   // Navigation arrows
   navigation: {
