@@ -930,7 +930,7 @@ p.delivery {
 
 .contact::before {
   content: '';
-  background: url('./img/bg-cocoa.jpg');
+  background: url('./img/bg-cocoa.png');
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1853,6 +1853,10 @@ p.delivery {
     font-size: 3.5rem;
   }
 
+  .home-block__svg {
+    margin-top: 0;
+  }
+
   p.about-sub-title {
     width: 60%;
     margin: 0 auto;
@@ -1892,9 +1896,7 @@ p.delivery {
     flex-direction: column;
     text-align: center;
   }
-
   .home-block__svg {
-    margin-top: 0;
     width: 100%;
   }
 }
