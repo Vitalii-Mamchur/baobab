@@ -214,6 +214,7 @@ span {
   color: var(--bg-color);
   font-weight: 500;
   text-transform: uppercase;
+  /* margin-left: 3.2rem; */
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -1827,6 +1828,9 @@ p.delivery {
 }
 
 @media (max-width: 462px) {
+  .main-logo {
+    margin-top: 60px;
+  }
   .home-block__text {
     padding-left: 0;
     padding-right: 0;
@@ -1834,6 +1838,8 @@ p.delivery {
 
   .home-block__svg {
     width: 80%;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .home-content h1 {

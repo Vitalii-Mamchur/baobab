@@ -8,8 +8,7 @@ const isActiveSwiper = () => {
 
   function swiperFunc() {
     const initNeeded = document.documentElement.clientWidth > 520;
-    console.log(document.documentElement.clientWidth);
-    console.log(initNeeded);
+
     isActive = isActive !== undefined ? isActive : !initNeeded;
 
     if (initNeeded && !isActive) {
