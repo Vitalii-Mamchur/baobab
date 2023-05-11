@@ -7,10 +7,10 @@ const swiper = new Swiper('.swiper', {
   //   // type: 'progressbar',
   // },
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: true,
+  // },
 
   speed: 1200,
 
