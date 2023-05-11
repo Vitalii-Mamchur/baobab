@@ -1,27 +1,37 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: false,
+const isActiveSwiper = () => {
+  let swiper, isActive;
+  // const $window = window;
 
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   // type: 'progressbar',
-  // },
+  swiperFunc();
+  window.addEventListener('resize', swiperFunc);
+  // window.resizeBy(swiperFunc);
 
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: true,
-  // },
+  function swiperFunc() {
+    const initNeeded = document.documentElement.clientWidth > 520;
+    console.log(document.documentElement.clientWidth);
+    console.log(initNeeded);
+    isActive = isActive !== undefined ? isActive : !initNeeded;
 
-  speed: 1200,
+    if (initNeeded && !isActive) {
+      swiper = new Swiper('.swiper', {
+        loop: false,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+        speed: 1200,
 
-  // effect: 'fade',
-  // fadeEffect: {
-  //   crossFade: true,
-  // },
-});
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      isActive = true;
+    }
+    if (!initNeeded && isActive) {
+      swiper.disable();
+      isActive = false;
+    }
+  }
+
+  swiperFunc();
+};
+
+isActiveSwiper();

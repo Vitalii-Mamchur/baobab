@@ -1380,6 +1380,9 @@ p.delivery {
   .about-img {
     height: 50vh;
   }
+  .about-img img {
+    margin-right: 0;
+  }
 
   .about::before,
   .education::before {
@@ -1432,7 +1435,7 @@ p.delivery {
   }
 }
 
-@media (max-width: 850px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .logo-span {
     display: inline;
   }
@@ -1571,10 +1574,6 @@ p.delivery {
     display: none;
   }
 
-  .about-img {
-    height: 100%;
-  }
-
   .about-img img {
     width: 100%;
   }
@@ -1600,6 +1599,15 @@ p.delivery {
 @media (max-width: 520px) {
   html {
     font-size: 50%;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 
   .home {
@@ -1664,7 +1672,11 @@ p.delivery {
   }
 
   .about {
-    height: 100vh;
+    margin-top: 0;
+  }
+
+  .content-slider__wrapper {
+    flex-direction: column;
   }
 
   .about-content {
@@ -1674,18 +1686,35 @@ p.delivery {
     flex-direction: column;
     -webkit-box-shadow: none;
     box-shadow: none;
+    margin-bottom: 0;
   }
 
+  .content-reverse .about-text,
   .about-text {
-    max-width: 80%;
+    width: 95%;
+    min-height: 0;
     margin: 0;
-    padding: 5px;
+    padding: 30px 15px;
+    margin-top: -10px;
+    border: 2px solid rgba(135, 129, 129, 0.6);
+    border-radius: 10px;
+  }
+
+  .about-list {
+    margin-left: 64px;
   }
 
   .about-list,
   .about-text p {
+    text-align: justify;
+    text-indent: 12px;
     margin-top: 2rem;
     font-size: 2rem;
+  }
+
+  p.about-sub-title {
+    font-weight: 700;
+    text-align: center;
   }
 
   .price {
@@ -1858,7 +1887,7 @@ p.delivery {
   }
 
   p.about-sub-title {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -1868,15 +1897,19 @@ p.delivery {
   }
 
   .partners-about {
-    padding: 3rem 0 0;
+    margin: 3rem 0 0;
   }
 }
 
-@media (max-width: 371px) {
+@media (max-width: 375px) {
   .home {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .main-logo {
+    margin-top: 50px;
   }
 
   .footer {
@@ -1898,5 +1931,10 @@ p.delivery {
   }
   .home-block__svg {
     width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .home-block__text {
+    margin-top: 0;
   }
 }
