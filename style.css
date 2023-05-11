@@ -214,10 +214,13 @@ span {
   color: var(--bg-color);
   font-weight: 500;
   text-transform: uppercase;
-  margin-left: 3.2rem;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.navbar a + a {
+  margin-left: 3.2rem;
 }
 
 .navbar a:hover,
