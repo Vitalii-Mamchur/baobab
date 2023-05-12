@@ -43,6 +43,10 @@ body {
   display: none;
 }
 
+section {
+  min-height: 100vh;
+}
+
 section,
 .section {
   padding: 50px 5%;
@@ -1548,10 +1552,6 @@ p.delivery {
 
   .main-logo img {
     height: 100px;
-  }
-
-  .logo > span {
-    display: none;
   }
 
   .home-block__text {
